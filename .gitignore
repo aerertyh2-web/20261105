@@ -1,0 +1,42 @@
+# Python 与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# 测试与工具缓存
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# 本地配置和密钥
+.env
+.env.*
+!.env.example
+data/zeabur-variables.txt
+
+# SQLite 数据库和 WAL 文件
+data/*.db
+data/*.db-*
+data/*.sqlite
+data/*.sqlite-*
+
+# 上传、备份和日志：仅保留目录占位文件
+data/uploads/*
+!data/uploads/.gitkeep
+data/backups/*
+!data/backups/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+
+# 系统与编辑器文件
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 打包产物（压缩包内可能含 .git 或源码，不进入版本库）
+dist/
